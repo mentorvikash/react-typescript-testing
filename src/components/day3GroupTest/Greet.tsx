@@ -4,7 +4,7 @@ interface IGreet1 {
   name?: string;
 }
 function Greet1(props: IGreet1) {
-  return <div>hello {props.name}</div>;
+  return <div>hello {props.name ? props.name : "kamal"}</div>;
 }
 
 export default Greet1;
