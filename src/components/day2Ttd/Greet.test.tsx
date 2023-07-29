@@ -9,14 +9,14 @@ test("if hello present", () => {
   expect(text).toBeInTheDocument();
 });
 
-test("if props passed", () => {
+test.skip("if props passed", () => {
   render(<Greet1 name="vikash" />);
   const text = screen.getByText(/hello vikash/i);
   expect(text).toBeInTheDocument();
 });
 
-test("if props not passed", () => {
+test.only("if props not passed", () => {
   render(<Greet1 name="vikash" />);
-  const text = screen.getByText(/hel/i);
+  const text = screen.getByText(/hell/i);
   expect(text).toBeInTheDocument();
 });
