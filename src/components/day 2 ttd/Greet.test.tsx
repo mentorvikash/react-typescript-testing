@@ -14,3 +14,9 @@ test("if props passed", () => {
   const text = screen.getByText(/hello vikash/i);
   expect(text).toBeInTheDocument();
 });
+
+test("if props not passed", () => {
+  render(<Greet1 name="vikash" />);
+  const text = screen.getByText(/hel/i);
+  expect(text).toBeInTheDocument();
+});
