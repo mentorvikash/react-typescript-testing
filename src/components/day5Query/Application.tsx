@@ -6,10 +6,21 @@ function Application() {
       <div>
         <h1>heading 1</h1>
         <h2>heading 2</h2>
+        <p>Paragraph text 1</p>
+        <p>Paragraph text 2</p>
+        <img src="#" alt="boy running on road" />
+        <span title="close">X</span>
       </div>
+      <div data-testid="custom-element">Custom Element</div>
       <div>
         <label htmlFor="name">Name</label>
-        <input type="text" id="name" />
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter Fullname"
+          value="vikash"
+          onChange={() => {}}
+        />
         <label htmlFor="bio">bio</label>
         <input type="text" id="bio" />
       </div>

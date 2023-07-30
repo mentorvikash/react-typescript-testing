@@ -44,8 +44,31 @@ describe("applications", () => {
     const selectfirst = screen.getByLabelText("bio", {
       selector: "input",
     });
-
     expect(selectfirst).toBeInTheDocument();
+
+    // getByPlaceholderText
+    const targetInput = screen.getByPlaceholderText("Enter Fullname");
+    expect(targetInput).toBeInTheDocument();
+
+    // getByText -> DIV | SPAN | PARAGRAPH
+    const paragraphElement = screen.getByText("Paragraph text 1");
+    expect(paragraphElement).toBeInTheDocument();
+
+    // getByDisplayValue - used to target element by it's dispaly value as in input field
+    const inputElemenTByValue = screen.getByDisplayValue("vikash");
+    expect(inputElemenTByValue).toBeInTheDocument();
+
+    // getByAltText - input | img | area | custom html element
+    const imageElement = screen.getByAltText("boy running on road");
+    expect(imageElement).toBeInTheDocument();
+
+    // getByTitle - span target by title (target that have title attribute)
+    const closeElement = screen.getByTitle("close");
+    expect(closeElement).toBeInTheDocument();
+
+    // getByTestId -> return that element have data-testid attribute
+    const customElement = screen.getByTestId("custom-element");
+    expect(customElement).toBeInTheDocument();
   });
 });
 
@@ -73,3 +96,9 @@ describe("applications", () => {
 // ===========
 // getByLabelText method is used to tarat input elements by its lable tag
 // if two lables have same label then we can use slelector in optional parameter their we specify the element to be target.
+
+// =======
+// getByPlaceholderText method is used to tarat input elements by its placeholder text
+
+// =========
+// getByText method is used to tarat input elements by Text | Used to target target paragraph elements.
