@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ISkills } from "./SkillsInterface";
 
 function Skills({ skills }: ISkills) {
