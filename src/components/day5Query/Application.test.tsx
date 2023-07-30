@@ -35,6 +35,17 @@ describe("applications", () => {
 
     const submitButton = screen.getByRole("button");
     expect(submitButton).toBeInTheDocument();
+
+    // getByLableText
+    const selectElementByL1 = screen.getByLabelText("Name");
+    expect(selectElementByL1).toBeInTheDocument();
+
+    // two element with same label text but different element
+    const selectfirst = screen.getByLabelText("bio", {
+      selector: "input",
+    });
+
+    expect(selectfirst).toBeInTheDocument();
   });
 });
 
@@ -58,3 +69,7 @@ describe("applications", () => {
 // to use anchor element as button in navbar. You have to add role="button"
 // To see all types of roles use
 // https://testing-library.com/docs/queries/byrole  and   https://www.w3.org/TR/html-aria/#docconformance
+
+// ===========
+// getByLabelText method is used to tarat input elements by its lable tag
+// if two lables have same label then we can use slelector in optional parameter their we specify the element to be target.

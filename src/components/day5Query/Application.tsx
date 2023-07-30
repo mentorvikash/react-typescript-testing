@@ -14,7 +14,9 @@ function Application() {
         <input type="text" id="bio" />
       </div>
       <div>
-        <label htmlFor="job-location">Job Location</label>
+        {/* <label htmlFor="job-location">Job Location</label> */}
+        <label htmlFor="job-location">bio</label>
+
         <select id="job-location">
           <option value="">Select country</option>
           <option value="US">United State</option>
