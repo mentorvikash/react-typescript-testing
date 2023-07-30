@@ -102,3 +102,6 @@ describe("applications", () => {
 
 // =========
 // getByText method is used to tarat input elements by Text | Used to target target paragraph elements.
+
+//========== Order with priority =====
+// 1. getByRole | 2. getByLabelText | 3. getByPlaceholderText | 4. getByText | 5. getByDisplayValue | 6. getByAltText | 7. getByTitle | 8. getByTestid
