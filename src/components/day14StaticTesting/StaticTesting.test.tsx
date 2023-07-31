@@ -39,3 +39,6 @@ describe("StaticTestingHttp", () => {
 // lint-staged ensure to check only the files that has changes and have to be commited instead of compair all codebase
 // To install use - npm installl -D lint-staged
 // In package.json add the following "lint-staged": {"*.{ts,tsx}": ["eslint"], "*.{ts,tsx}": ["prettier"]}"
+
+// Pre push auto code test - ensure all test passes before commit
+// use -> npx husky add .husky/pre-push "npm test -- --watchAll=false"
