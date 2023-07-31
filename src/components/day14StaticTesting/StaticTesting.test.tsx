@@ -31,3 +31,7 @@ describe("StaticTestingHttp", () => {
 // once complete add plugin to eslintconfing extends section -> "eslint-config-prettier"
 // also add prettier extention to your code editor
 // also config pritter to auto format the code eveytime you save.
+
+// Husky help to auto lint and prettier the code before committing to git to ensure not error puhsed to production
+// use this command npx husky-init && npm install
+// this will modify package.json and create a sample pre config file for husky in _ folder pre-commit file
