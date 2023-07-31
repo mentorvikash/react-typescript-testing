@@ -8,7 +8,7 @@ function MockingHttp() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((users) =>
-        setUser(users.map((user: { name: string }) => user.name))
+        setUser(users.map((user: { name: string }) => user.name)),
       )
       .catch((error) => setError(error.message));
   });

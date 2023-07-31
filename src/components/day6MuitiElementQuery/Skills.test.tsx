@@ -21,7 +21,7 @@ describe("Testing skill component", () => {
     expect(headingElementbyTextRegex).toBeInTheDocument();
 
     const headingElementbyText = screen.getByText((content) =>
-      content.startsWith("List of")
+      content.startsWith("List of"),
     );
 
     expect(headingElementbyText).toBeInTheDocument();

@@ -34,7 +34,7 @@ describe("Testing skill component", () => {
       },
       {
         timeout: 2000,
-      }
+      },
     );
     expect(learingButton).toBeInTheDocument();
   });

@@ -12,7 +12,7 @@ describe("Couner2", () => {
         count={0}
         handleIncrement={handleIncrement}
         handleDecrement={handleDecrement}
-      />
+      />,
     );
     const countElement = screen.getByRole("heading");
     expect(countElement).toHaveTextContent("0");

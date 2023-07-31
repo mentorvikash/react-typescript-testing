@@ -6,7 +6,7 @@ import Counter from "./components/day9MouseEvents/Counter";
 import Counter1 from "./components/day10Keyboard/Counter";
 import AppProvider from "./components/day11withMui/AppProvider";
 import MuiMode from "./components/day11withMui/MuiMode";
-import MockingHttp from "./components/day12MockingHttp/MockingHttp";
+import MockingHttp from "./components/day13MockingHttp/MockingHttp";
 
 function App() {
   const skills = ["painting", "singing", "dancing", "running"];

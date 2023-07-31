@@ -4,8 +4,9 @@ import { server } from "../../mocks/server";
 import { rest } from "msw";
 
 describe("MockingHttp", () => {
-  test("test if all users render from api", async () => {
-    const { container } = render(<MockingHttp />);
+  test("if all users render from api", async () => {
+    render(<MockingHttp />);
+    // const { container } = render(<MockingHttp />);
     // logRoles(container);
     const ifComponentRender = screen.getByText("Users");
     expect(ifComponentRender).toBeInTheDocument();
@@ -21,8 +22,8 @@ describe("MockingHttp", () => {
         "https://jsonplaceholder.typicode.com/users",
         (req, res, ctx) => {
           return res(ctx.status(500));
-        }
-      )
+        },
+      ),
     );
 
     render(<MockingHttp />);
