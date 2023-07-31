@@ -1,3 +1,3 @@
 export interface ICounter {
-  initialCount: number;
+  initialCount?: number;
 }
