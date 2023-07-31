@@ -35,3 +35,7 @@ describe("StaticTestingHttp", () => {
 // Husky help to auto lint and prettier the code before committing to git to ensure not error puhsed to production
 // use this command npx husky-init && npm install
 // this will modify package.json and create a sample pre config file for husky in _ folder pre-commit file
+
+// lint-staged ensure to check only the files that has changes and have to be commited instead of compair all codebase
+// To install use - npm installl -D lint-staged
+// In package.json add the following "lint-staged": {"*.{ts,tsx}": ["eslint"], "*.{ts,tsx}": ["prettier"]}"

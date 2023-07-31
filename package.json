@@ -67,5 +67,13 @@
     "eslint-plugin-jest-dom": "^5.0.1",
     "prettier": "^3.0.0",
     "husky": "^8.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint"
+    ],
+    "*.{ts,tsx,css,scss}": [
+      "prettier"
+    ]
   }
 }
